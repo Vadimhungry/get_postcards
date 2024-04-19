@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "writing-to-you"
+version = "0.1.0"
+description = ""
+authors = ["VadimK <yaralavadim@gmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "get_image_script" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.31.0"
+flake8 = "^7.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-postcards = "get_image_script.scripts.get_postcards:main"
