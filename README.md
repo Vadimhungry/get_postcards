@@ -7,7 +7,8 @@
 
 Для установки выполните команды в терминале:
 1. `git clone git@github.com:Vadimhungry/get_postcards.git`
-2. `python3 -m pip install dist/*.whl`
+2. `pip install poetry`
+3. `python3 -m pip install --user dist/*.whl`
 
 ## Использование
 
